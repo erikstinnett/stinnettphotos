@@ -1,0 +1,64 @@
+/* Affects the entire html page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  
+  /* Affects the navbar class */
+  .navbar 
+  {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center; /* Center the item horizontally */
+    align-items: center;     /* Center the item vertically */
+    font-size: 1.2rem;      /* 1 rem = 16 px. 1.2rem == 19.2px*/
+    position: sticky;       /* Keeps position absolute */
+    top: 0;                 
+    z-index: 999;           /* Position of navbar in relation to other (z axis). 999 puts navbar at very front */
+  }
+
+  /* Affects logo + "Stinnett photography" */
+  .navbar_container 
+  {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto; /* Space around border to the right */
+    margin-left: auto;  /* Space around border to the left */
+    padding-right: 50px; 
+    padding-left: 50px; /* Distance from left side of page */
+  }
+
+  /* Styles element navbar_logo */
+
+  #navbar_logo
+  {
+    background-color: #fff;
+    background-image: linear-gradient(to top, #ffd900 0%, #ffffff 100%);
+    background-size: 100%;
+    /* ------ Color and gradient applied only to the text */ 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    /* -------------------------------------------------- */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;  /* Decoration on text */
+    font-size: 2rem;   
+  }
+
+  .logo
+  {
+    padding-right: 10px; 
+    background-image: linear-gradient(to top, #ffd900 0%, #ffffff 100%);
+    background-size: 49px 49px;
+    background-repeat: no-repeat;
+  }
