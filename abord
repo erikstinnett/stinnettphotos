@@ -1,0 +1,35 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 1e9bc6e..4326eac 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -7,19 +7,6 @@[m
+     <title>Erik Stinnett Photography</title>[m
+     <link rel="stylesheet" href="styles.css">[m
+ </head>[m
+[31m-<body>[m
+[31m-    <!-- Navbar section-->[m
+[31m-    <nav class ="navbar">    <!-- Navbar affects everything in the navbar-->[m
+[31m-        <div class="navbar_container">  <!-- Affects logo + name-->[m
+[31m-            <a href="/"id="navbar_logo">[m
+[31m-                <div class="logo"><img src="icons/LOGO.svg" width="50" height="50"></div>Stinnett Photography[m
+[31m-            </a> <!-- Top left of navbar: just logo class--> [m
+[31m-        </div>[m
+[31m-    </nav>[m
+[31m-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>[m
+[31m-    <title>Erik Stinnett Photography</title>[m
+[31m-    <link rel="stylesheet" href="styles.css">[m
+[31m-</head>[m
+ <body>[m
+     <!-- Navbar section-->[m
+     <nav class ="navbar">    <!-- Navbar affects everything in the navbar-->[m
+[1mdiff --git a/styles.css b/styles.css[m
+[1mindex 2eb92af..6385aee 100644[m
+[1m--- a/styles.css[m
+[1m+++ b/styles.css[m
+[36m@@ -230,4 +230,4 @@[m
+     #mobile-menu.is-active .bar:nth-child(1) {[m
+         transform: translateY(-8px) rotate(-45deg);[m
+     }[m
+[31m-}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
