@@ -28,7 +28,7 @@
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    max-width: 2500px;
     margin-right: auto; /* Space around border to the right */
     margin-left: auto;  /* Space around border to the left */
     padding-right: 50px; 
@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;  /* y-axis alignment */
     list-style: none;
-    text-align: center;
+    text-align: right;
   }
 
   /* Specifically the links sans button */
@@ -85,7 +85,7 @@
     color: #fff;  /* Set to white */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     text-decoration: none;
     padding: 0 1rem;  /* y-axis, x-axis */
     height: 100%;
