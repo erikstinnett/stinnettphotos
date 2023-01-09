@@ -13,11 +13,12 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('images/png1.png');
+    url('images/png1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+
   }
 
   /* Affects the navbar class */
@@ -254,7 +255,9 @@
 
 .slideshow-container img
 {
-  height:700px;
+  padding-top: 30px;
+  height:800px;
+  max-width: 1500;
   object-fit: cover;
 }
 /* Hide the images by default */
@@ -337,7 +340,43 @@
   to {opacity: 1}
 }
 
-.store
+.main_container {
+  max-width:1500px;
+  display: flex;
+  margin: auto; /* Position of container */
+  align-items: center;   /* Centers container */
+}
+.store {
+  background: rgba(0,0,0,0.5);
+  padding-top: 10px;
+  flex-direction: column;
+  height: 50vh;
+  width: 75%;
+}
+.store img
+{
+  width: 30vh;
+  height: 45vh;
+  object-fit: cover;
+  white-space: nowrap;
+  padding-top: 10px;
+}
+
+/*.instagram {
+  background: rgba(0,0,0,0.5);
+  max-width:1500px;
+  padding-top: 10px;
+
+}
+.instagram img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  white-space: nowrap;
+  margin-top: 50px;
+}
+
+/*.store
 {
   background: rgba(0,0,0,0.5);
   height: 40vh;
@@ -508,7 +547,7 @@
 }
 
 
-/* Footer CSS */
+/* Footer CSS 
 .footer {
   background: rgba(0,0,0,0.8);
   padding: 5rem 0;
@@ -543,3 +582,5 @@
   background-image: linear-gradient(to top, #ff05ff 0%, #d63ed6 0%, #8400ff 100%);
 
 }
+
+*/
