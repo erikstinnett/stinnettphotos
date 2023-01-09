@@ -13,11 +13,12 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('images/png1.png');
+    url('images/png1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+
   }
 
   /* Affects the navbar class */
@@ -246,35 +247,23 @@
     }
 }
 
-.main_container
-{
-  position: rel;
-  /*background-color: #000000;*/
-  align-items: center;
-  justify-self: center;
-  /*height: 90vh;   /* 90 viewport height (dynamic 90% of the screen)*/
-  z-index: 1;
-
-}
-
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
 .slideshow-container img
 {
-  height: 500px;
-  object-fit: cover;  /* Keeps the image to scale */
+  padding-top: 30px;
+  height:800px;
+  max-width: 1500;
+  object-fit: cover;
 }
-
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -283,7 +272,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #fff;
+  color: #ffd900;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -299,12 +288,12 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #ffd900;
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #ffd900;
+  color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -315,7 +304,7 @@
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #ffd900;
+  color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -332,6 +321,8 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin-bottom: 150px;
+
 }
 
 .active, .dot:hover {
@@ -345,11 +336,47 @@
 }
 
 @keyframes fade {
-  from {opacity: .1}
-  to {opacity: .05}
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-.store 
+.main_container {
+  max-width:1500px;
+  display: flex;
+  margin: auto; /* Position of container */
+  align-items: center;   /* Centers container */
+}
+.store {
+  background: rgba(0,0,0,0.5);
+  padding-top: 10px;
+  flex-direction: column;
+  height: 50vh;
+  width: 75%;
+}
+.store img
+{
+  width: 30vh;
+  height: 45vh;
+  object-fit: cover;
+  white-space: nowrap;
+  padding-top: 10px;
+}
+
+/*.instagram {
+  background: rgba(0,0,0,0.5);
+  max-width:1500px;
+  padding-top: 10px;
+
+}
+.instagram img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  white-space: nowrap;
+  margin-top: 50px;
+}
+
+/*.store
 {
   background: rgba(0,0,0,0.5);
   height: 40vh;
@@ -360,6 +387,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
 }
 
 .store button
@@ -410,9 +438,25 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
 }
 
-.instagrambutton
+.instagram img
+{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  white-space: nowrap;
+  margin-top: 50px;
+}
+
+.instagram img:hover
+{
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.instagram button
 {
   font-size: 2rem;
   color: #fff;
@@ -421,17 +465,122 @@
   outline: none;
   border-radius: 4px;
   background: #ffd900;
-  
+  position:relative;
 }
 
-.instagrambutton:hover
+.instagram button:hover
 {
   background: #635400;
   transition: all 0.3s ease;
   cursor: pointer;
 
 }
+
 .store + .instagram
 {
   margin-top: 150px;
 }
+
+.instagram + .about
+{
+  margin-top: 150px;
+}
+.about
+{
+  background: rgba(0,0,0,0.5);
+  height: 45vh;
+  width: 75%;
+  margin: auto;
+  padding-top: 10px;
+  max-width:1500px;
+  position:relative;
+  margin-bottom: 150px;
+}
+
+.about img
+{
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  white-space: nowrap;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  float:left;
+}
+
+.about h1
+{
+  color:#fff;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.about p
+{
+  margin-left: 20px;
+  text-align: left;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.about button
+{
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #947f07;
+}
+
+.about button:hover
+{
+  background: #635400;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* Footer CSS 
+.footer {
+  background: rgba(0,0,0,0.8);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: rgb(255, 255, 255);
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #a750e0;
+  color: white;
+  background-image: linear-gradient(to top, #ff05ff 0%, #d63ed6 0%, #8400ff 100%);
+
+}
+
+*/
