@@ -7,11 +7,12 @@
     <title>Erik Stinnett Photography</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <script src="https://kit.fontawesome.com/c7601ac588.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     
-   <!-- Navbar section-->
     <nav class ="navbar">    <!-- Navbar affects everything in the navbar-->
         <div class="navbar_container">  <!-- Affects logo + name-->
             <a href="/"id="navbar_logo"> <!-- Top left of navbar: just logo class--> 
@@ -24,23 +25,26 @@
             </div>
             <ul class="navbar_menu">
                 <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="/" class="navbar_links">Home</a> <!--Home link-->
+                    <a href="index.html" class="navbar_links">Home</a> <!--Home link-->
                 </li>
                 <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="/" class="navbar_links">Gallery</a> <!--Home link-->
+                    <a href="gallery.html" class="navbar_links">Gallery</a> <!--Home link-->
                 </li>
                 <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="/" class="navbar_links">About</a> <!--Home link-->
+                    <a href="lightpollution.html" class="navbar_links">Light Pollution</a> <!--Home link-->
+                </li>
+                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
+                    <a href="aboutme.html" class="navbar_links">About Me</a> <!--Home link-->
                 </li>
                 <li class = "navbar_btn"> <!-- Class for "SHOP" button-->
-                    <a href="/" class="button">Shop</a>
+                    <a href="" class="button">Shop</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+   <!-- <div class="slideshow-container">
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
@@ -71,32 +75,86 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-    </div>  
+    </div>  -->
     <!-- Main webpage-->
     <div class="main">
         <div class="main_container">
+            <div class="banner-container">
+                <img id="banner" src="images/banner.jpg" alt="">
+            </div>
+
+            <div class="bio-container">
+                <h1>Welcome!</h1>
+                <p>Welcome to my website!</p>
+            </div>
             <div class="store">
-                <button>The Prints</button>
                 <a href="pages/gallery.html">
                     <img src="images/png3.jpg" alt="">
                     <img src="images/png2.jpg" alt="">
                     <img src="images/hh.jpg" alt="">
                     <img src="images/barnorion.jpg" alt="">
                 </a>
+                <button>The Prints</button>
             </div>
-        <!--    <div class="instagram">
+            <div class="instagram">
+                <figure data-behold-id="E16ehlYwfYUM4iJPd2XQ"></figure>
+                <script src="https://w.behold.so/widget.js" type="module"></script>
                 <a href="https://www.instagram.com/astro_panda42/">
-                    <button>Follow me on Instagram: @astro_panda42</button>
+                    <button>Check out my Instagram!</button>
                 </a>
-                <div class="instaimgs">
-                    <a href="https://www.instagram.com/p/CR9g1gMFuf_/"><img src="images/insta1.pg" alt=""></a>
-                    <a href="https://www.instagram.com/p/CSz4Fi3FnC4/"><img src="images/insta2.pg" alt=""></a>
-                    <a href="https://www.instagram.com/p/CUlOhjmgIk-/"><img src="images/insta3.pg" alt=""></a>
-                    <a href="https://www.instagram.com/p/Cejy5NLgv7B/"><img src="images/insta4.pg" alt=""></a>
-                </div>
             </div>
+            <div class="lightPollution">
+                <h1>Our Bright Night</h1>
+                <h2>Light Pollution</h2>
+                <div class="paragraph">
+                    <p><br>As we expand into the far reaches of our planet, we bring artificial light. 
+                        Over 80% of people in the world look up at night and see light-polluted skies, as the number of dark and unpolluted skies dwindle. 
+                        Artificial night-time lights not only impact our skies. It negatively affect our environment, ecosystems, and our health. [WIP]
+                        <br> 
+                    </p>
+                </div>
+                <button>Learn More</button>
+                <img class="lpimg" src="images/lp.jpg">
+            </div>
+            <div class="aboutMe">
+                <h1>About Me</h1>
+                <img src="images/profile.jpg" alt="">
+                <div class="aboutMeParagraph">
+                    <p>I am a Computer Science student at the University of Central Arkansas. <br>
+                        I got into astrophotography in 2019 when I wanted to take a picture of the moon
+                        using my phone! <br> The rest is history.
+                        <br><br> To learn more about me and the gear I use, click the button below.
+                    </p>
+                </div>
+               
+            </div>
+        </div>    
+        <div class="footer">
+            <div class="links">
+                <h3>Navigate</h3>
+                <a href="//">About</a>
+                <a href="//">Shop</a>
+                <a href="//">Gallery</a>
+                <a href="lightpollution.html">Light Pollution</a>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <span>Email:</span>
+                <a href="mailto: estinnett@cub.uca.edu">estinnett@cub.uca.edu</a>
+            </div>
+            <div class="social">
+                <h3>Socials</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/astro_panda42/" class="fa-brands fa-instagram"></a>
+                    <a href ="https://www.facebook.com/profile.php?id=100004587377124" class="fa-brands fa-facebook"></a>
+                    <a href ="https://www.linkedin.com/in/erik-s-036226131/" class="fa-brands fa-linkedin"></a>
+                    <a href="https://github.com/erikstinnett" class="fa-brands fa-github"></a>
+                </div>
 
-            <div class="about">
+            </div>
+        </div>
+    </div>
+         <!--   <div class="about">
                 <h1>About Me</h1>
                 <p>My name is Erik Stinnett and I am a 21-year-old astrophotographer from Arkansas. <br clear="right">I began my astrophotography journey in October of 2019, when I took my first photo <br>of the moon using an iphone
                     and a Meade Lx200 8". Ever since, I've been hooked on <br clear="right">astrophotography and sharing the beauty of space through my images. <br><br>
@@ -118,7 +176,6 @@
         </div>
     -->
     <script src="app.js"></script>
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 </body>
 </html> 

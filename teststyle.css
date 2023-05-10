@@ -1,0 +1,14 @@
+
+
+.store {
+display: flex;
+align-items: flex-end;
+}
+
+
+.store img {
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+    
+}

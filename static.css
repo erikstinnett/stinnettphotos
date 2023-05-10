@@ -1,0 +1,212 @@
+/* A CSS file designated to the static aspects of the webpage
+    i.e navbar and footer. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body 
+{
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('images/png1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  position: absolute;
+  background-position: 50% 40%;
+  width: 100%;
+}
+
+/* Affects the navbar class */
+.navbar 
+{
+  background: #131313;
+  height: 80px;
+  display: flex;
+  justify-content: center; /* Center the item horizontally */
+  align-items: center;     /* Center the item vertically */
+  font-size: 1.2rem;      /* 1 rem = 16 px. 1.2rem == 19.2px*/
+  position: sticky;       /* Keeps position absolute */
+  top: 0;                 
+  z-index: 999;           /* Position of navbar in relation to other (z axis). 999 puts navbar at very front */
+}
+
+/* Affects logo + "Stinnett photography" */
+.navbar_container 
+{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 2500px;
+  margin-right: auto; /* Space around border to the right */
+  margin-left: auto;  /* Space around border to the left */
+  padding-right: 50px; 
+  padding-left: 50px; /* Distance from left side of page */
+}
+
+/* Styles element navbar_logo */
+
+#navbar_logo
+{
+  background-color: #fff;
+  background-image: linear-gradient(to top, #ffd900 0%, #ffffff 100%);
+  background-size: 100%;
+  /* ------ Color and gradient applied only to the text */ 
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /* -------------------------------------------------- */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;  /* Decoration on text */
+  font-size: 2rem;   
+}
+
+/* ES Camera Icon */
+.logo
+{
+  padding-right: 10px; 
+  background-image: linear-gradient(to top, #ffd900 0%, #ffffff 100%);
+  background-size: 49px 49px;
+  background-repeat: no-repeat;
+}
+
+/* Affects the position of the navbar links + button */
+.navbar_menu
+{
+  display: flex;
+  align-items: center;  /* y-axis alignment */
+  list-style: none;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Specifically the links sans button */
+.navbar_item
+{
+  height: 80px; /* Aligns links to top of page */
+}
+
+/* Links */
+.navbar_links
+{
+  color: #fff;  /* Set to white */
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  text-decoration: none;
+  padding: 0 1rem;  /* y-axis, x-axis */
+  height: 100%;
+}   
+
+.navbar_links:hover
+{
+  color: #caac00;
+  transition: all 0.3s ease;
+}
+
+/* Button positioning */
+.navbar_btn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+/* Within the hyperlink button */
+.button 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #caac00;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* When moused over */
+.button:hover
+{
+  background: #635400;
+  transition: all 0.3s ease;
+}
+
+
+/* Footer styling */
+.footer {
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    width: 100%;
+    color: #fff;
+    padding: 100px 15%;
+    margin-top: 20vh;
+    justify-content: center;
+  }
+  
+  .footer div {
+    text-align: center;
+  
+  }
+  
+  .contact {
+    flex-grow: 2;
+  }
+  
+  .footer div h3 {
+    font-weight: 300;
+    margin-bottom: 3vh;
+    letter-spacing: 1px;
+  }
+  .links a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 1vh;
+  }
+   
+  .links a:hover {
+    color: #ffd900;
+  
+  }
+  .contact a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 1vh;
+  }
+  
+  .contact a:hover {
+    color: #ffd900;
+  }
+  
+  .social-icons a {
+    font-size: 3vh;
+    cursor: pointer;
+    margin: 1vh;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .social-icons a:hover {
+    color: #ffd900;
+  }
